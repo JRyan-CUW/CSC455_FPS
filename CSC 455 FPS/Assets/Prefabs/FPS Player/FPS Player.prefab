@@ -563,7 +563,7 @@ GameObject:
   m_Layer: 0
   m_Name: FPS View
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -841,12 +841,13 @@ GameObject:
   - component: {fileID: 114413189159185044}
   - component: {fileID: 114644297009358138}
   - component: {fileID: 114617082933386780}
+  - component: {fileID: 114651215277274036}
   - component: {fileID: 114192370422871752}
   - component: {fileID: 114173846563589776}
   - component: {fileID: 114175692155878994}
   m_Layer: 0
   m_Name: FPS Player
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9190,6 +9191,7 @@ MonoBehaviour:
   mouseLook:
   - {fileID: 114413189159185044}
   - {fileID: 114789263996563240}
+  playerRenderer: {fileID: 137330831988799412}
 --- !u!114 &114173846563589776
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9336,6 +9338,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   concrete_Impact: {fileID: 100002, guid: 2b4ffdf4a64f87d4ca3c0de925e6d343, type: 2}
+  blood_Impact: {fileID: 100006, guid: cb771650f86a58a46ab01616eef4650c, type: 2}
+  damageAmount: 5
 --- !u!114 &114644297009358138
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9351,6 +9355,18 @@ MonoBehaviour:
     type: 2}
   animatorController_MachineGun: {fileID: 9100000, guid: 0770a54f266a24bc7b5bd0ee2d2b4f0a,
     type: 2}
+--- !u!114 &114651215277274036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1157685322606032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603632d4b0189124fa779cc6a60af469, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!114 &114789263996563240
 MonoBehaviour:
   m_ObjectHideFlags: 1
