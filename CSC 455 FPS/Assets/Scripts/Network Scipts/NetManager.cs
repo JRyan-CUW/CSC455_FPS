@@ -21,11 +21,11 @@ public class NetManager : NetworkManager {
         }
         else
         {
-            playerObj.transform.position = spawnPositions[1].position;
+            playerObj.transform.position = spawnPositions[0].position;
             playerControllerId++;
         }
         print(playerControllerId);
-        NetworkServer.AddPlayerForConnection(conn, playerObj, playerControllerId); 
+        NetworkServer.AddPlayerForConnection(conn, playerObj, playerControllerId);
     }
 
     void SetPortAndAddress()

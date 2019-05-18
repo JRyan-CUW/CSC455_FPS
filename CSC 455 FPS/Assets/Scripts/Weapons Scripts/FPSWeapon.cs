@@ -14,7 +14,7 @@ public class FPSWeapon : MonoBehaviour {
 
     public void Shoot()
     {
-        StartCoroutine(TurnOnMuzzleFlash());
+        //StartCoroutine(TurnOnMuzzleFlash());
     }
 
     IEnumerator TurnOnMuzzleFlash()

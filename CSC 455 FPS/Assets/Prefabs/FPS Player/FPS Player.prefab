@@ -839,6 +839,7 @@ GameObject:
   - component: {fileID: 143270160159914468}
   - component: {fileID: 114070128469389180}
   - component: {fileID: 114413189159185044}
+  - component: {fileID: 114377636713367766}
   - component: {fileID: 114644297009358138}
   - component: {fileID: 114617082933386780}
   - component: {fileID: 114651215277274036}
@@ -9169,10 +9170,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62194d30a40065e4cb054d7a6bdad454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 6.75
-  runSpeed: 10
+  walkSpeed: 10
+  runSpeed: 15
   crouchSpeed: 4
-  jumpSpeed: 8
+  jumpSpeed: 13
   gravity: 20
   groundLayer:
     serializedVersion: 2
@@ -9275,6 +9276,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 426b17a0a04cf224ea8918c968d46755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114377636713367766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1157685322606032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bf2af66e341322448779c68aebde910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114413189159185044
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9339,6 +9351,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   concrete_Impact: {fileID: 100002, guid: 2b4ffdf4a64f87d4ca3c0de925e6d343, type: 2}
   blood_Impact: {fileID: 100006, guid: cb771650f86a58a46ab01616eef4650c, type: 2}
+  dustSpawn: {fileID: 1848330659654342, guid: 22c3511193aa7ff438a6b3d6fb76b28c, type: 2}
+  aztecSpawn: {fileID: 1172829168744908, guid: 290689b87decfa9438163998c803ff3b, type: 2}
+  poolSpawn: {fileID: 1444662896219100, guid: ed91b4c856e003245b0c2f89fc234726, type: 2}
+  iceSpawn: {fileID: 1188856588500546, guid: 3f60f6054313925498143421d5499210, type: 2}
+  startGameSpawn: {fileID: 1852928798067388, guid: 440b6ab75319ea544bfa2cd993e66ce0,
+    type: 2}
   damageAmount: 5
 --- !u!114 &114644297009358138
 MonoBehaviour:

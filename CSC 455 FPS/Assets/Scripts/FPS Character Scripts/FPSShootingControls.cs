@@ -14,6 +14,11 @@ public class FPSShootingControls : NetworkBehaviour {
     [SerializeField]
     private GameObject concrete_Impact, blood_Impact;
 
+    public GameObject dustSpawn;
+    public GameObject aztecSpawn;
+    public GameObject poolSpawn;
+    public GameObject iceSpawn;
+    public GameObject startGameSpawn; 
     public float damageAmount = 5f;
 
 	// Use this for initialization
@@ -36,9 +41,25 @@ public class FPSShootingControls : NetworkBehaviour {
 
             if(Physics.Raycast(mainCam.transform.position, mainCam.transform.forward, out hit))
             {
-                if(hit.transform.tag == "Enemy")
+                if (hit.transform.tag == "Enemy")
                 {
                     CmdDealDamage(hit.transform.gameObject, hit.point, hit.normal);
+                }
+                else if(hit.transform.tag == "DustTeleport")
+                {
+                    gameObject.transform.position = dustSpawn.transform.position;
+                }
+                else if (hit.transform.tag == "AztecTeleport")
+                {
+                    gameObject.transform.position = aztecSpawn.transform.position;
+                }
+                else if (hit.transform.tag == "PoolTeleport")
+                {
+                    gameObject.transform.position = poolSpawn.transform.position;
+                }
+                else if (hit.transform.tag == "IceTeleport")
+                {
+                    gameObject.transform.position = iceSpawn.transform.position;
                 }
                 else
                 {

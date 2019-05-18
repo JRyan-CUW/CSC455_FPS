@@ -5,6 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - DustTeleport
+  - AztecTeleport
+  - ItalyTeleport
+  - PoolTeleport
+  - IceTeleport
+  - StartGame
+  - Monster
+  - StartGameLabel
+  - Target
   layers:
   - Default
   - TransparentFX

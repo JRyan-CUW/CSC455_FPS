@@ -10,10 +10,10 @@ public class FPSController : NetworkBehaviour {
 
     private Vector3 firstPerson_View_Rotation = Vector3.zero;
 
-    public float walkSpeed = 6.75f;
-    public float runSpeed = 10f;
+    public float walkSpeed = 15f;
+    public float runSpeed = 20f;
     public float crouchSpeed = 4f;
-    public float jumpSpeed = 8f;
+    public float jumpSpeed = 18f;
     public float gravity = 20f;
 
     private float speed;
@@ -57,7 +57,7 @@ public class FPSController : NetworkBehaviour {
 
     private Color[] playerColors = new Color[] { new Color(0, 44, 255, 255), new Color(252, 208, 193, 255), new Color(0, 0, 0, 255) };
     public Renderer playerRenderer;
-
+    
     // Use this for initialization
     void Start ()
     {
@@ -72,7 +72,7 @@ public class FPSController : NetworkBehaviour {
 
         playerAnimation = GetComponent<FPSPlayerAnimations>();
 
-        weapon_Manager.weapons[0].SetActive(true);
+        //weapon_Manager.weapons[0].SetActive(true);
         current_Weapon = weapon_Manager.weapons[0].GetComponent<FPSWeapon>();
 
         handsWeapon_Manager.weapons[0].SetActive(true);
@@ -140,7 +140,6 @@ public class FPSController : NetworkBehaviour {
                 playerRenderer.materials[i].color = playerColors[i];
             }
         }
-
     }
 
     public override void OnStartLocalPlayer()
